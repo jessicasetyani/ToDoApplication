@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.myapplication"
+    namespace = "com.example.todoapplication"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.myapplication"
+        applicationId = "com.example.todoapplication"
         minSdk = 21
         targetSdk = 34
         versionCode = 1
@@ -71,7 +71,7 @@ dependencies {
 
     //Hilt
     val hiltVersion = "2.50"
-    implementation("com.google.dagger:hilt-android:2.50")
+    implementation("com.google.dagger:hilt-android:$hiltVersion")
     ksp("com.google.dagger:hilt-android-compiler:$hiltVersion")
 
     //Room
